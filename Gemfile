@@ -1,5 +1,5 @@
 group :production do
-  source 'https://rubygems.org'
+  #source 'https://rubygems.org'
 end
 group :development, :test do
   source 'http://ruby.taobao.org'
@@ -7,8 +7,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
-# Use sqlite3 as the database for Active Record
-
+# Bootstrap
+gem 'bootstrap-sass', '3.2.0.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.0'
 # Use Uglifier as compressor for JavaScript assets
