@@ -193,7 +193,7 @@ input {
 }
 
 #session_remember_me {
-  width:auto;
+  width: auto;
   margin-left: 0;
 }
 

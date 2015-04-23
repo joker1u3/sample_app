@@ -1,9 +1,9 @@
 group :production do
-  source 'https://rubygems.org'
+  #source 'https://rubygems.org'
   ruby '2.0.0'
 end
 group :development, :test do
-  #source 'http://ruby.taobao.org'
+  source 'http://ruby.taobao.org'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -11,7 +11,11 @@ gem 'rails', '4.2.0'
 # bcrypt
 gem 'bcrypt', '3.1.7'
 # Bootstrap
-gem 'bootstrap-sass', '3.2.0.0'
+gem 'bootstrap-sass',          '3.2.0.0'
+gem 'faker',                   '1.4.2'
+gem 'will_paginate',           '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -48,6 +52,7 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '1.1.3'
+
 end
 
 group :test do
