@@ -1,9 +1,9 @@
 group :production do
-  #source 'https://rubygems.org'
+  source 'https://rubygems.org'
   ruby '2.0.0'
 end
 group :development, :test do
-  source 'http://ruby.taobao.org'
+  #source 'http://ruby.taobao.org'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
