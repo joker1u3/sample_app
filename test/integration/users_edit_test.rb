@@ -47,6 +47,9 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     @user.reload
     assert_equal @user.name, name
     assert_equal @user.email, email
+    delete logout_path
+    log_in_as(@user)
+    assert session[:forwarding_url].nil?
   end
 
   # test "the truth" do
