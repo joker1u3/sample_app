@@ -41,6 +41,7 @@ class User < ActiveRecord::Base
   end
 
   def activate
+    #update_columns(activated: true, activated_at: Time.zone.now)
     update_attribute(:activated,    true)
     update_attribute(:activated_at, Time.zone.now)
   end
@@ -52,6 +53,8 @@ class User < ActiveRecord::Base
   # 设置密码重设相关的属性
   def create_reset_digest
     self.reset_token = User.new_token
+    #update_columns(reset_digest:  User.digest(reset_token),
+    #               reset_sent_at: Time.zone.now)
     update_attribute(:reset_digest,  User.digest(reset_token))
     update_attribute(:reset_sent_at, Time.zone.now)
   end
@@ -67,6 +70,12 @@ class User < ActiveRecord::Base
   end
 
   private
+
+    def update_columns(params={})
+      params.each do |key, value|
+        self.update_attribute(key, value)
+      end
+    end
 
     def downcate_email
       self.email = email.downcase

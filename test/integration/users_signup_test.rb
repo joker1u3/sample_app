@@ -22,8 +22,10 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                              password: "showme",
                                              password_confirmation: "showme" }
     end
-    assert_template 'users/show'
-    assert_not flash.empty?
+    assert_template 'static_pages/home'
+    @user = User.find_by(email: 'user@example.com')
+    @user.update_attribute(:activated, true)
+    log_in_as(@user)
     assert is_logged_in?
   end
   
