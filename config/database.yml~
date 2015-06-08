@@ -27,5 +27,5 @@ production:
   encoding: utf8
   database: sampleapp
   host: localhost
-  username: syemo
-  password: 9KuDPYcrqrcVNZEd
+  username: root
+  password:

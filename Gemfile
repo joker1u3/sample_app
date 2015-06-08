@@ -1,13 +1,9 @@
-group :production do
-  source 'https://rubygems.org'
-  ruby '2.0.0'
-end
-group :development, :test do
-  #source 'http://ruby.taobao.org'
-end
+
+source 'https://ruby.taobao.org'
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.1'
 # bcrypt
 gem 'bcrypt', '3.1.7'
 # Bootstrap
@@ -66,7 +62,9 @@ group :test do
 end
 
 group :production do
-  gem 'pg',  '0.17.1'
+  #gem 'pg',  '0.17.1'
+  gem 'puma'
+  gem 'mysql2'
   gem 'rails_12factor', '0.0.2'
   gem 'unicorn', '4.8.3'
 end
