@@ -9,6 +9,7 @@
 # server "115.29.43.74", :app, :web, :db, :primary => true
 
 set :application, 'ruby.cdjump.com'
+set :password, 'Tonysyemohr2014'
 server '115.29.43.74', user: 'root', password: fetch(:password), port: 22, roles: %w{web app db}
 set :deploy_to, "/alidata/www/Web.WJK/#{fetch(:application)}"
 set :rails_env, 'production'
