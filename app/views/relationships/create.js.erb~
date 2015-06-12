@@ -1,2 +1,0 @@
-$("#follow_form").html("111")
-$("#followers").html("<%= @user.followers.count %>")

@@ -16,4 +16,6 @@
 !/log/.keep
 /tmp
 
-spring/
+/spring/*.pid
+/public/uploads
+*~

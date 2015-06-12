@@ -1,9 +1,0 @@
-<% provide(:title,"About" %>
-<h1>About</h1>
-<p>
-  The <a href="#" ><em>Ruby on Rails Tutorial</em></a> is a
-  <a href="#" >book</a>. and
-  <a href="#" > to teach web development with 
-  <a href="#">Ruby on Rails</a>.
-  This is the sample application for the tutorial.
-</p>

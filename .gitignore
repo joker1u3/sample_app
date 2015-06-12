@@ -17,3 +17,9 @@
 /tmp
 
 /spring/*.pid
+/public/uploads
+
+/config/database.yml
+/config/secrets.yml
+
+*~
