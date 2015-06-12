@@ -12,7 +12,7 @@ set :application, 't.ruby.cdjump.com'
 set :password, ask('Server password', nil)
 server '115.29.43.74', user: 'root', password: fetch(:password), port: 22, roles: %w{web app db}
 set :deploy_to, "/alidata/www/Web.WJK/#{fetch(:application)}"
-set :rails_env, 'development'
+set :rails_env, :production
 
 # role-based syntax
 # ==================
