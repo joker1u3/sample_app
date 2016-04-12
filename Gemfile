@@ -53,7 +53,7 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug',  '3.4.0'
-  #gem 'sqlite3', '1.3.9'
+  gem 'sqlite3', '1.3.9'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '2.0.0.beta3'
 
@@ -76,4 +76,3 @@ group :production do
   # gem 'unicorn', '4.8.3'
   gem 'rack-timeout'
 end
-
